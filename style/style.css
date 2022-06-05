@@ -1,5 +1,6 @@
 html {
-  font-family: 'Sigmar One', cursive;
+  font-family: 'Balsamiq Sans', cursive;
+  color: black;
   background-color: #befaaa;
   font-size: 1.2rem;
 }
@@ -51,8 +52,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #55482a;
-  -webkit-text-stroke: 0.6px white;
+  color: #000000;
+  font-family: 'Sigmar One', cursive;
+  font-family: 'Balsamiq Sans', cursive;
   font-size: 2.5rem;
 }
 
@@ -80,9 +82,6 @@ form {
 }
 
 .form_element {
-  color: white;
-  -webkit-text-stroke: 1.5px #55482a;
-  text-shadow: 0px 2px #55482a;
   font-size: 1.3rem;
 }
 
@@ -123,9 +122,9 @@ button {
   padding: 10px 25px;
   font-size: 1.1rem;
   border-radius: 5%;
-  font-family: 'Signika Negative', sans-serif;
-  color: #55482a;
-  border: 3px solid #55482a;
+  font-family: 'Balsamiq Sans', cursive;
+  color: #000000;
+  border: 3px solid #000000;
 }
 
 #submit_button:hover {
@@ -138,7 +137,7 @@ button {
   font-size: 0.8rem;
   border-radius: 5%;
   border: 2px solid black;
-  font-family: 'Sigmar One', cursive;
+  font-family: 'Balsamiq Sans', cursive;
   color: black;
 }
 
@@ -148,25 +147,22 @@ button {
 
 #table_headers th {
   font-size: 1.25rem;
-  color: #55482a;
-  -webkit-text-stroke: 1px white;
 }
 
 #read_status {
   text-align: center;
   font-size: 0.8rem;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: 'Balsamiq Sans', cursive;
   padding: 5px 0px;
 }
 
 #delete_button {
-  background-color: red;
+  background-color: #ff4d4d;
   padding: 2px 10px;
   font-size: 0.8rem;
   border-radius: 5%;
   border: 2px solid black;
-  font-family: 'Sigmar One', cursive;
-  color: white;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 #delete_button:hover {
@@ -174,11 +170,10 @@ button {
 }
 
 #book_title, #book_author, #read_status {
-  border: 2px solid #55482a;
+  border: 2px solid #000000;
 }
 
 #table_body td {
-  color: white;
-  -webkit-text-stroke: 1px #55482a;
+  -webkit-text-stroke: 1px #000000;
 }
 /*# sourceMappingURL=style.css.map */
