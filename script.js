@@ -50,7 +50,7 @@ function changeStatus(index, read_status){
 }
 
 function deleteBook(index){
-    myLibrary.splice(index, index + 1);
+    myLibrary.splice(index,1);
 }
 
 function findLibraryIndex(book_title, book_author){
@@ -59,7 +59,7 @@ function findLibraryIndex(book_title, book_author){
     }
     else{
         for (let i = 0; i < myLibrary.length; i++){
-            if (book_title == myLibrary[i].title && book_author == myLibrary[i].author){
+            if (book_title === myLibrary[i].title && book_author === myLibrary[i].author){
                 return i;
             }
         }
