@@ -1,8 +1,9 @@
 html{
-    font-family: 'Neucha', cursive;
-    background-color: #e6c9b0;
+    // font-family: 'Neucha', cursive;
+    font-family: 'Sigmar One', cursive;
+    background-color: #befaaa;
     // background-image: url(https://s3.envato.com/files/323827874/light%20wood%20background.jpg);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 body{
@@ -24,7 +25,7 @@ body{
 #container_one{
     height: 40vh;
     width: 100%;
-    background-color: #d6a982;
+    background-color: #a4e3f2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,8 +35,12 @@ body{
 h1{
     text-align: center;
     align-items: center;
-}
+    color: #55482a;
+    -webkit-text-stroke: 0.6px rgb(255, 255, 255);
+    font-size: 2.5rem;
+    // text-shadow: 0px 2px rgb(255, 255, 255);
 
+}
 
 form{
     display: flex;
@@ -48,6 +53,15 @@ form{
     justify-content: space-evenly;
     align-items: center;
 }
+
+.form_element{
+    color: white;
+    -webkit-text-stroke: 1.5px #55482a;
+    text-shadow: 0px 2px #55482a;
+    font-size: 1.3rem;
+}
+
+
 
 table{
     table-layout: fixed;
@@ -67,12 +81,12 @@ table{
 }
 
 #status{
-    width: 100px;
+    width: 150px;
     text-align: start;
 }
 
 #delete{
-    width: 100px;
+    width: 150px;
     text-align: start;
 }
 
@@ -83,15 +97,17 @@ button{
 }
 
 #submit_button{
-    background-color: rgb(181, 102, 42);
+    background-color: rgba(255, 255, 255, 0.94);
     padding: 10px 25px;
     font-size: 1.1rem;
     border-radius: 5%;
     &:hover{
-        background-color: rgb(168, 95, 39);
+        background-color: rgb(233, 233, 233);
     }
     font-family: 'Signika Negative', sans-serif;
-    color: white;
+    // font-family: 'Sigmar One', cursive;
+    color: #55482a;
+    border: 3px solid #55482a;
 }
 
 #status_button{
@@ -103,12 +119,16 @@ button{
     &:hover{
         background-color: rgb(237, 237, 237);
     }
-    font-family: 'Signika Negative', sans-serif;
+    // font-family: 'Signika Negative', sans-serif;
+    font-family: 'Sigmar One', cursive;
     color: rgb(0, 0, 0);
 }
 
 #table_headers th{
     font-size: 1.25rem;
+    color: #55482a;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    // text-shadow: 0px 2px rgb(255, 255, 255);
     // text-decoration: underline;
 }
 
@@ -116,6 +136,7 @@ button{
     text-align: center;
     font-size: 0.8rem;
     font-family: 'Signika Negative', sans-serif;
+    // font-family: 'Sigmar One', cursive;
     padding: 5px 0px;
 }
 
@@ -128,6 +149,16 @@ button{
     &:hover{
         background-color: rgb(232, 0, 0);
     }
-    font-family: 'Signika Negative', sans-serif;
+    // font-family: 'Signika Negative', sans-serif;
+    font-family: 'Sigmar One', cursive;
     color: rgb(255, 255, 255);
+}
+
+#book_title, #book_author, #read_status{
+    border: 2px solid #55482a;
+}
+
+#table_body td{
+    color: white;
+    -webkit-text-stroke: 1px #55482a;
 }
