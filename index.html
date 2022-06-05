@@ -8,6 +8,33 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <h1>Book Library</h1>
+    <form action="#" name = "form">
+        <label for="book_title">Book:</label>
+        <input type="text" id="book_title" name="book_title" placeholder="Harry Potter and the Sorcerer's Stone..." required>
+        <label for="book_author">Author:</label>
+        <input type="text" id="book_author" name="book_author" placeholder="JK Rowling..." required>
+        <label for="read_status">Status:</label>
+        <select name="read_status" id="read_status">
+            <option value="read">Read</option>
+            <option value="not_read">Not Read</option>
+        </select>
+        <button type="submit" id="submit_button">Submit</button>
+    </form>
+    <table>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <tbody id = "table_body"></tbody>
+        </tr>
+    </table>
+    <!-- <h2>Title:</h2>
+    <p class = "title_display" id = "title_display"></p>
+    <h2>Author:</h2>
+    <p class = "author_display" id = "author_display"></p> -->
+
 </body>
 </html>
