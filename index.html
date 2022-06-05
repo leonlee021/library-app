@@ -7,28 +7,41 @@
     <title>Document</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neucha&family=Roboto+Mono&family=Signika+Negative&family=Tiro+Bangla&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <h1 class="row">Personal Book Library</h1>
         <form action="#" name = "form" class = "row">
-            <label for="book_title">Book:</label>
-            <input type="text" id="book_title" name="book_title" placeholder="Harry Potter and the Sorcerer's Stone..." required>
-            <label for="book_author">Author:</label>
-            <input type="text" id="book_author" name="book_author" placeholder="JK Rowling..." required>
-            <label for="read_status">Status:</label>
-            <select name="read_status" id="read_status">
-                <option value="Read">Read</option>
-                <option value="Not Read">Not Read</option>
-            </select>
-            <button type="submit" id="submit_button">Submit</button>
+            <div class="form_row">
+                <div class="form_element">
+                    <label for="book_title">Book:</label>
+                    <input type="text" id="book_title" name="book_title" placeholder="Harry Potter and the Sorcerer's Stone..." required style="font-family: 'Signika Negative', sans-serif;">
+                </div>
+                <div class="form_element">
+                    <label for="book_author">Author:</label>
+                    <input type="text" id="book_author" name="book_author" placeholder="JK Rowling..." required style="font-family: 'Signika Negative', sans-serif;">
+                </div>
+                <div class="form_element">
+                    <label for="read_status">Status:</label>
+                    <select name="read_status" id="read_status">
+                        <option value="Read">Read</option>
+                        <option value="Not Read">Not Read</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="form_element"><button type="submit" id="submit_button">SUBMIT</button></div>
+            </div>
         </form>
         <table class = "row" id = "row_three" style="border: 10px black;">
             <tr id = "table_headers">
-                <th id="book">Book</th>
-                <th id = "author">Author</th>
-                <th id = "status">Status</th>
-                <th id = "delete">Delete?</th>
+                <th id="book">BOOK</th>
+                <th id = "author">AUTHOR</th>
+                <th id = "status">STATUS</th>
+                <th id = "delete">DELETE?</th>
             </tr>
             <tr>
                 <tbody id = "table_body"></tbody>

@@ -1,4 +1,6 @@
-let myLibrary = [];
+let myLibrary = [
+    {title: "The Giver", author: "Lois Lowry", read: "Read"},{title: "How to Win Friends and Influence People", author: "Dale Carnegie", read: "Read"}
+];
 
 function Book(title, author, read){
     this.title = title;
@@ -22,7 +24,7 @@ const $table = document
     .querySelector('table')
     .addEventListener('click',(e) => {
         const currentTarget = e.target.parentNode.parentNode.childNodes;
-        if (e.target.innerHTML == 'Delete'){
+        if (e.target.innerHTML == 'DELETE'){
             if (confirm(`are you sure you want to delete ${currentTarget[1].innerText}`)){
                 deleteBook(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText));
             }
@@ -52,7 +54,7 @@ function deleteBook(index){
 }
 
 function findLibraryIndex(book_title, book_author){
-    if (myLibrary.length == 0){
+    if (myLibrary.length == 0 || myLibrary === null){
         return;
     }
     else{
@@ -84,8 +86,8 @@ function render(){
             <tr>
                 <td>${book.title}</td>
                 <td>${book.author}</td>
-                <td><button>${book.read}</button></td>
-                <td><button>Delete</button><td>
+                <td><button id = "status_button">${book.read}</button></td>
+                <td><button id = "delete_button">DELETE</button><td>
             </tr>
             `;
         $tableBody.insertAdjacentHTML("afterbegin", displayedBook);

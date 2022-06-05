@@ -1,3 +1,9 @@
+html {
+  font-family: 'Neucha', cursive;
+  background-color: #e6c9b0;
+  font-size: 1.2rem;
+}
+
 #container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,13 +17,41 @@
           align-items: center;
 }
 
+h1 {
+  text-align: center;
+}
+
 .row {
-  margin: 3% 5%;
+  margin: 1.5% 5%;
+  width: 60%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.form_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 table {
   table-layout: fixed;
-  border-spacing: 30px 0px;
+  border-spacing: 30px 5px;
   text-align: start;
 }
 
@@ -39,5 +73,63 @@ table {
 #delete {
   width: 100px;
   text-align: start;
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+#submit_button {
+  background-color: #b5662a;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 5%;
+  font-family: 'Signika Negative', sans-serif;
+  color: white;
+}
+
+#submit_button:hover {
+  background-color: #a85f27;
+}
+
+#status_button {
+  background-color: white;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  border-radius: 5%;
+  border: 2px solid black;
+  font-family: 'Signika Negative', sans-serif;
+  color: black;
+}
+
+#status_button:hover {
+  background-color: #ededed;
+}
+
+#table_headers th {
+  font-size: 1.25rem;
+}
+
+#read_status {
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: 'Signika Negative', sans-serif;
+  padding: 5px 0px;
+}
+
+#delete_button {
+  background-color: red;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  border-radius: 5%;
+  border: 2px solid black;
+  font-family: 'Signika Negative', sans-serif;
+  color: white;
+}
+
+#delete_button:hover {
+  background-color: #e80000;
 }
 /*# sourceMappingURL=style.css.map */
