@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1>Book Library</h1>
-    <form action="#" name = "form">
-        <label for="book_title">Book:</label>
-        <input type="text" id="book_title" name="book_title" placeholder="Harry Potter and the Sorcerer's Stone..." required>
-        <label for="book_author">Author:</label>
-        <input type="text" id="book_author" name="book_author" placeholder="JK Rowling..." required>
-        <label for="read_status">Status:</label>
-        <select name="read_status" id="read_status">
-            <option value="read">Read</option>
-            <option value="not_read">Not Read</option>
-        </select>
-        <button type="submit" id="submit_button">Submit</button>
-    </form>
-    <table>
-        <tr>
-            <th>Book</th>
-            <th>Author</th>
-            <th>Status</th>
-            <th></th>
-        </tr>
-        <tr>
-            <tbody id = "table_body"></tbody>
-        </tr>
-    </table>
+    <div id="container">
+        <h1 class="row">Personal Book Library</h1>
+        <form action="#" name = "form" class = "row">
+            <label for="book_title">Book:</label>
+            <input type="text" id="book_title" name="book_title" placeholder="Harry Potter and the Sorcerer's Stone..." required>
+            <label for="book_author">Author:</label>
+            <input type="text" id="book_author" name="book_author" placeholder="JK Rowling..." required>
+            <label for="read_status">Status:</label>
+            <select name="read_status" id="read_status">
+                <option value="Read">Read</option>
+                <option value="Not Read">Not Read</option>
+            </select>
+            <button type="submit" id="submit_button">Submit</button>
+        </form>
+        <table class = "row">
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            <tr>
+                <tbody id = "table_body"></tbody>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

@@ -21,14 +21,31 @@ let $tableBody = document.querySelector('#table_body');
 const $table = document
     .querySelector('table')
     .addEventListener('click',(e) => {
-        const currentTarget = e.target.parentNode.parentNode.childNodes[1];
+        const currentTarget = e.target.parentNode.parentNode.childNodes;
         if (e.target.innerHTML == 'Delete'){
-            if (confirm(`are you sure you want to delete ${currentTarget.innerText}`)){
-                deleteBook(findLibraryIndex(currentTarget.innerText, e.target.parentNode.parentNode.childNodes[3].innerText));
-                render();
+            if (confirm(`are you sure you want to delete ${currentTarget[1].innerText}`)){
+                deleteBook(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText));
             }
         }
+        else if (e.target.innerHTML == 'Read'){
+            changeStatus(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText),'Read');
+        }
+        else if (e.target.innerHTML == 'Not Read'){
+            changeStatus(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText),'Not Read');
+        }
+        render();
     })
+
+function changeStatus(index, read_status){
+    if (read_status == 'Read'){
+        myLibrary[index].read = 'Not Read';
+        return;
+    }
+    else{
+        myLibrary[index].read = 'Read';
+        return;
+    }
+}
 
 function deleteBook(index){
     myLibrary.splice(index, index + 1);
@@ -57,7 +74,7 @@ form.onsubmit = function(e){
     render();
     document.getElementById("book_title").value = '';
     document.getElementById('book_author').value = '';
-    document.form.read_status.value = "read";
+    document.form.read_status.value = "Read";
 }
 
 function render(){
