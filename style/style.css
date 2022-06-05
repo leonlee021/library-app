@@ -1,7 +1,12 @@
 html {
   font-family: 'Neucha', cursive;
   background-color: #e6c9b0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
 }
 
 #container {
@@ -17,13 +22,35 @@ html {
           align-items: center;
 }
 
-h1 {
-  text-align: center;
+.row {
+  margin: 2% 5%;
+  width: 60%;
 }
 
-.row {
-  margin: 1.5% 5%;
-  width: 60%;
+#container_one {
+  height: 40vh;
+  width: 100%;
+  background-color: #d6a982;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form {
@@ -51,7 +78,7 @@ form {
 
 table {
   table-layout: fixed;
-  border-spacing: 30px 5px;
+  border-spacing: 30px 8px;
   text-align: start;
 }
 
@@ -84,7 +111,7 @@ button {
 #submit_button {
   background-color: #b5662a;
   padding: 10px 25px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 5%;
   font-family: 'Signika Negative', sans-serif;
   color: white;

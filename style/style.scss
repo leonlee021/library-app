@@ -2,7 +2,12 @@ html{
     font-family: 'Neucha', cursive;
     background-color: #e6c9b0;
     // background-image: url(https://s3.envato.com/files/323827874/light%20wood%20background.jpg);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
 }
 
 #container{
@@ -11,14 +16,26 @@ html{
     align-items: center;
 }
 
-h1{
-    text-align: center;
-}
-
 .row{
-    margin: 1.5% 5%;
+    margin: 2% 5%;
     width: 60%;
 }
+
+#container_one{
+    height: 40vh;
+    width: 100%;
+    background-color: #d6a982;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    align-items: center;
+}
+
 
 form{
     display: flex;
@@ -34,7 +51,7 @@ form{
 
 table{
     table-layout: fixed;
-    border-spacing: 30px 5px;
+    border-spacing: 30px 8px;
     text-align: start;
 }
 
@@ -68,7 +85,7 @@ button{
 #submit_button{
     background-color: rgb(181, 102, 42);
     padding: 10px 25px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: 5%;
     &:hover{
         background-color: rgb(168, 95, 39);
@@ -92,6 +109,7 @@ button{
 
 #table_headers th{
     font-size: 1.25rem;
+    // text-decoration: underline;
 }
 
 #read_status{
