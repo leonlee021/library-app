@@ -25,9 +25,7 @@ const $table = document
     .addEventListener('click',(e) => {
         const currentTarget = e.target.parentNode.parentNode.childNodes;
         if (e.target.innerHTML == 'DELETE'){
-            if (confirm(`are you sure you want to delete ${currentTarget[1].innerText}`)){
-                deleteBook(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText));
-            }
+            deleteBook(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText));
         }
         else if (e.target.innerHTML == 'Read'){
             changeStatus(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText),'Read');
@@ -35,7 +33,7 @@ const $table = document
         else if (e.target.innerHTML == 'Not Read'){
             changeStatus(findLibraryIndex(currentTarget[1].innerText, currentTarget[3].innerText),'Not Read');
         }
-        render();
+        updateTable();
     })
 
 function changeStatus(index, read_status){
@@ -73,13 +71,13 @@ form.onsubmit = function(e){
     var book_author = document.getElementById('book_author').value;
     var read_status = document.form.read_status.value;
     addBookToLibrary(book_title, book_author, read_status);
-    render();
+    updateTable();
     document.getElementById("book_title").value = '';
     document.getElementById('book_author').value = '';
     document.form.read_status.value = "Read";
 }
 
-function render(){
+function updateTable(){
     $tableBody.innerHTML = '';
     myLibrary.forEach((book) => {
         const displayedBook = `
@@ -94,4 +92,4 @@ function render(){
     });
 }
 
-render();
+updateTable();
